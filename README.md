@@ -28,7 +28,7 @@ Cómo usar este repositorio
 
 Clona el repositorio:
 
-git clone https://github.com/tu_usuario/curso-java.git
+git clone https://github.com/Jony-English22/Coffee-Day.git
 
 Explora los archivos y ejemplos incluidos en cada módulo.
 
