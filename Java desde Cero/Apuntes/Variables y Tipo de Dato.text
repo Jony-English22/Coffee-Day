@@ -1,0 +1,78 @@
+✨VARIABLES Y TIPOS DE DATOS
+
+1️⃣ Empezarmos
+    "¿Cómo podemos guardar información en un programa?"
+    💡 Explicar que en Java usamos variables para almacenar datos y cada variable tiene un tipo de dato que define qué tipo de información puede contener.
+
+    Ejemplo en la vida real:
+    📦 Variables son como cajas donde guardamos cosas. Cada caja tiene un propósito:
+
+    Una caja para números enteros (ejemplo: 10, 25, -5).
+    Una caja para textos (ejemplo: "Hola, mundo!"). c
+    Una caja para valores de sí o no (ejemplo: verdadero o falso).
+
+2️⃣ Qué es una Variable
+    📌 Definición: Una variable es un espacio en memoria que almacena un valor y tiene un nombre.
+    📌 Reglas para nombrar variables:
+    ✅ Debe empezar con una letra o _.
+    ✅ No puede contener espacios.
+    ✅ No puede ser una palabra reservada de Java (como class, int, etc.).
+    ✅ Es recomendable usar nombres descriptivos (edad, nombreUsuario, etc.).
+
+3️⃣ Tipos de Datos en Java
+    En Java, los tipos de datos se dividen en primitivos y referenciados.
+
+    ✔ Tipos de Datos Primitivos (Básicos)
+    Estos almacenan valores simples directamente en la memoria.
+
+    |  Tipo  | Tamaño	 | Valor defecto  |         Rango de valores       |	         Ejemplo            |
+    ---------------------------------------------------------------------------------------------------------
+      byte     1 byte           0	               -128 a 127	                     byte edad = 25; 
+      short	   2 bytes	        0	            -32,768 a 32,767	              short cantidad = 1000;
+      int	   4 bytes	        0	        -2,147,483,648 a 2,147,483,647	       int numero = 50000;
+      long	   8 bytes	        0L	        -9,223,372,036,854,775,808      	long distancia = 100000L;
+                                              a 9,223,372,036,854,775,807
+      float	   4 bytes	       0.0f	        Aproximadamente ±3.4 x 10³⁸	           float peso = 60.5f;
+      double   8 bytes	       0.0d	        Aproximadamente ±1.8 x 10³⁰⁸	      double precio = 99.99;
+      char	   2 bytes	     '\u0000'	     0 a 65,535 (código Unicode)	        char letra = 'A';
+      boolean	1 bit	      false	                true o false	            boolean esJavaFacil = true;
+    ----------------------------------------------------------------------------------------------------------
+
+    ✔ Tipos de Datos Referenciado 
+    Los tipos referenciados no almacenan directamente el valor, sino la dirección de memoria donde se encuentra el objeto.
+
+    📌 Concepto práctico de tipos referenciados
+    Imagina que tienes dos formas de escribir una dirección:
+
+    🚧 Tipos primitivos → Como apuntar directamente a una casa 🏠
+
+    Si te pido que me digas dónde vives y respondes: "En la casa número 123", entonces yo ya sé exactamente dónde estás.
+    Aquí, la casa sería el valor y la dirección de la casa no cambia.
+
+        🔹 Ejemplo en Java (tipo primitivo):
+            int numero = 10; // Almacena directamente el valor 10 en la memoria.
+            El valor 10 se almacena en la memoria sin intermediarios.
+
+    🚧 Tipos referenciados → Como apuntar a una dirección en una libreta 📖
+
+    Si en lugar de darme la dirección exacta, me das una libreta con la dirección escrita, yo primero tengo que leerla para saber dónde está la casa.
+    Si cambias lo que está escrito en la libreta, la dirección puede apuntar a otro lugar.
+
+        🔹 Ejemplo en Java (tipo referenciado):
+            String mensaje = "Hola"; // Se guarda una referencia al objeto "Hola"
+            mensaje = "Mundo"; // Ahora la referencia apunta a otro objeto "Mundo"
+
+    La variable mensaje no guarda directamente el texto "Hola", sino que guarda la dirección en memoria donde está almacenado el texto.
+    Cuando cambiamos mensaje = "Mundo";, no modificamos el texto "Hola", sino que la variable ahora apunta a otro lugar en memoria donde está "Mundo".
+
+
+    |  Tipo   |          Descripción       |	           Ejemplo              |
+    -----------------------------------------------------------------------------
+     String	     Almacena texto	                   String nombre = "Java";
+     Integer     Versión objeto de int	             Integer edad = 30;
+     Double	     Versión objeto de double	       Double precio = 199.99;
+     Float	     Versión objeto de float	        Float altura = 1.75f;
+     Long	     Versión objeto de long	        Long numeroGrande = 1000000L;
+     Boolean     Versión objeto de boolean	     Boolean esVerdadero = true;
+     Character   Versión objeto de char	            Character letra = 'J';
+     ----------------------------------------------------------------------------
